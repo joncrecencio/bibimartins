@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibi - Música</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-Dkm9OGzy25v37mMEmv6NdeXkkO6eONXvA8gcXNOKPl4Zh4ieLZHRvwTo8tE1oMgG8SMCfbwBrVvOLaZYHbc0Dg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo"><img src="img/bibi_logo.png" alt=""></a>
+            <nav class="nav-desktop">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#events">Eventos</a>
+                <a href="#music">Música</a>
+                <a href="#gallery">Galeria</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <button class="menu-mobile" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in"><img class="bibi" src="img/bibi_logo.png" alt=""></h1>
+            <p class="fade-in">Como você nunca viu</p>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <section id="about" class="section bg-dark">
+        <div class="container fade-in">
+            <h2 class="section-title">Sobre Bibi</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-border">
+                        <img src="img/bibi_sobre.jpeg" alt="Bibi">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p>Bibi é uma cantora, compositora e performer nascida no Brasil com uma voz que transcende gêneros e cativa plateias pelo mundo. Com influências que vão do jazz ao pop alternativo, suas composições exploram temas de identidade, amor e conexão humana.</p>
+                    <p>Iniciando sua carreira nos palcos pequenos de São Paulo, Bibi rapidamente ganhou reconhecimento por sua presença de palco magnética e sua capacidade de criar experiências musicais únicas e emocionantes.</p>
+                    <blockquote>"A música é minha forma de transformar o invisível em algo que todos possam sentir."</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title">Agenda de Shows</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h3>14 de Maio, 2025</h3>
+                            <p>Teatro Municipal</p>
+                            <p>São Paulo, Brasil</p>
+                        </div>
+                    </div>
+                    <a href="#" class="button">Ingressos</a>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h3>23 de Junho, 2025</h3>
+                            <p>Circo Voador</p>
+                            <p>Rio de Janeiro, Brasil</p>
+                        </div>
+                    </div>
+                    <a href="#" class="button">Ingressos</a>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h3>10 de Julho, 2025</h3>
+                            <p>Coliseu dos Recreios</p>
+                            <p>Lisboa, Portugal</p>
+                        </div>
+                    </div>
+                    <a href="#" class="button">Ingressos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="music" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title">Música</h2>
+            <div class="music-grid">
+                <div class="tracks">
+                    <h3>Últimos Lançamentos</h3>
+                    <div class="tracks-list">
+                        <div class="track-item">
+                            <div>
+                                <h4>Horizonte Perdido</h4>
+                                <p>2024</p>
+                            </div>
+                            <p>3:45</p>
+                        </div>
+                        <div class="track-item">
+                            <div>
+                                <h4>Luzes da Cidade</h4>
+                                <p>2024</p>
+                            </div>
+                            <p>4:12</p>
+                        </div>
+                        <div class="track-item">
+                            <div>
+                                <h4>Entre Mundos</h4>
+                                <p>2023</p>
+                            </div>
+                            <p>5:20</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="platforms">
+                    <h3>Ouça nas Plataformas</h3>
+                    <div class="platforms-grid">
+                        <a href="https://open.spotify.com" target="_blank" class="platform-card">
+                            <i class="fas fa-headphones"></i>
+                            <p>Spotify</p>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="platform-card">
+                            <i class="fab fa-youtube"></i>
+                            <p>YouTube</p>
+                        </a>
+                        <a href="https://music.apple.com" target="_blank" class="platform-card">
+                            <i class="fas fa-music"></i>
+                            <p>Apple Music</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container fade-in">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a" alt="Show 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f" alt="Show 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745" alt="Show 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1527203561188-dae1bc1a417f" alt="Show 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504704911898-68304a7d2807" alt="Show 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819" alt="Show 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+        <div class="container fade-in">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="button">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="social-links">
+                        <h3>Siga Bibi</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <div>
+                            <h3>Empresário</h3>
+                            <p>João Silva<br>
+                            contato@bibimusic.com<br>
+                            +55 11 99999-9999</p>
+                        </div>
+                        <div>
+                            <h3>Imprensa</h3>
+                            <p>Maria Oliveira<br>
+                            imprensa@bibimusic.com<br>
+                            +55 11 88888-8888</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Bibi</h2>
+                    <p>Cantora • Compositora • Performer</p>
+                </div>
+                <div class="footer-links">
+                    <p>&copy; 2025 Bibi Music. Todos os direitos reservados.</p>
+                    <div>
+                        <span>Política de Privacidade</span>
+                        <span>|</span>
+                        <span>Termos de Uso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
