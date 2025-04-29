@@ -19,6 +19,13 @@ body {
     line-height: 1.6;
 }
 
+i[data-lucide] {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+  }  
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -99,6 +106,21 @@ body {
     background-color: var(--color-dark-gray);
 }
 
+.section.bg-dark.bg-fixed{
+    background-image: url(https://images.unsplash.com/photo-1530419248307-be80b9468e77?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-attachment: fixed;
+}
+
+.comunication a{
+    text-decoration: none;
+    color: var(--color-white);
+    transition: 400ms;
+}
+
+.comunication a:hover{
+    color: var(--color-gray);
+}
+
 .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -171,6 +193,7 @@ body {
     height: 100%;
     border: 2px solid var(--color-gray);
 }
+
 
 .about-image img {
     width: 100%;
@@ -314,6 +337,10 @@ body {
     gap: 4rem;
 }
 
+.contact-flex{
+    display: flex;
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -340,8 +367,20 @@ body {
     border-color: var(--color-white);
 }
 
+.block-image{
+    height: 350px;
+    width: 350px;
+}
+
+.contact-img{
+    height: 100%;
+    width: 100%;
+}
+
 .contact-info {
-    display: grid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -371,7 +410,7 @@ body {
     color: var(--color-white);
 }
 .contact-details {
-    display: grid;
+    display: flex;
     gap: 2rem;
 }
 
@@ -483,6 +522,11 @@ body {
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
     }
 
     .platforms-grid {
