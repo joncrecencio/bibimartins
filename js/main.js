@@ -20,21 +20,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Menu mobile
-const menuButton = document.querySelector('.menu-mobile');
-const navLinks = document.querySelector('.nav-desktop').cloneNode(true);
+// const menuButton = document.querySelector('.menu-mobile');
+// const navLinks = document.querySelector('.nav-desktop').cloneNode(true);
 
-menuButton.addEventListener('click', () => {
-    const mobileMenu = document.querySelector('.mobile-menu') || createMobileMenu();
-    mobileMenu.classList.toggle('active');
-});
+// menuButton.addEventListener('click', () => {
+//     const mobileMenu = document.querySelector('.mobile-menu') || createMobileMenu();
+//     mobileMenu.classList.toggle('active');
+// });
 
-function createMobileMenu() {
-    const mobileMenu = document.createElement('div');
-    mobileMenu.className = 'mobile-menu';
-    mobileMenu.appendChild(navLinks);
-    document.body.appendChild(mobileMenu);
-    return mobileMenu;
-}
+// function createMobileMenu() {
+//     const mobileMenu = document.createElement('div');
+//     mobileMenu.className = 'mobile-menu';
+//     mobileMenu.appendChild(navLinks);
+//     document.body.appendChild(mobileMenu);
+//     return mobileMenu;
+// }
 
 // Animações de fade
 const observerOptions = {
