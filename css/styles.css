@@ -466,6 +466,12 @@ i[data-lucide] {
     margin: 0 0.5rem;
 }
 
+.footer-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
 /* Animations */
 .fade-in {
     opacity: 0;
