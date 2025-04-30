@@ -330,6 +330,19 @@ i[data-lucide] {
     transform: scale(1.05);
 }
 
+.lightbox button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1010;
+}
+
+.lightbox button:hover {
+    color: #f1f1f1;
+}
+
 /* Contact Section */
 .contact-grid {
     display: grid;
