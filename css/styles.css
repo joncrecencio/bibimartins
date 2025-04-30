@@ -107,7 +107,7 @@ i[data-lucide] {
 }
 
 .section.bg-dark.bg-fixed{
-    background-image: url(https://images.unsplash.com/photo-1530419248307-be80b9468e77?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url("https://images.unsplash.com/photo-1697488715911-0a33519b1b01?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-attachment: fixed;
 }
 
