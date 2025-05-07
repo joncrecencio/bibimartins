@@ -136,9 +136,10 @@ i[data-lucide] {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1516565349308-c76fe36a115c?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('../img/background.avif');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-overlay {
