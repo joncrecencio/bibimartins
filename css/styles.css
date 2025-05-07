@@ -142,6 +142,13 @@ i[data-lucide] {
     background-attachment: fixed;
 }
 
+/* Override para iOS (iPhone, iPad) */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll !important;
+    }
+}
+
 .hero-overlay {
     position: absolute;
     inset: 0;
