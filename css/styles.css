@@ -576,6 +576,12 @@ i[data-lucide] {
         gap: 2rem;
     }
 
+    .event-card {
+        flex-direction: column;
+        /* align-items: flex-start; */
+        gap: 10px
+    }
+
     .contact-info{
         display: flex;
         flex-direction: column;
