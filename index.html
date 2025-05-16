@@ -232,6 +232,50 @@
   </div>
 </footer>
 
+<!-- Banner de Cookies -->
+    <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #1a1a1a; color: #fff; padding: 1rem; text-align: center; z-index: 1000; display: none;">
+      Este site utiliza cookies para melhorar sua experiência. <a href="/politica-de-privacidade.html" style="color: #ffc000;">Saiba mais</a>.
+      <button onclick="aceitarCookies()" style="margin-left: 10px; padding: 0.5rem 1rem; background: #bb1313; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Aceitar</button>
+    </div>
+
+    <script>
+      // Função para ativar o consentimento
+      function aceitarCookies() {
+        localStorage.setItem('cookies_aceitos', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+        carregarGoogleAnalytics();
+      }
+
+      // Função para injetar o Google Analytics após consentimento
+      function carregarGoogleAnalytics() {
+        // Substitua 'G-XXXXXXXXXX' pelo seu ID de medição real do GA4
+        const ID_ANALYTICS = 'G-EMG6MRJE24';
+
+        // Carrega o script do GA4
+        const scriptTag = document.createElement('script');
+        scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${ID_ANALYTICS}`;
+        scriptTag.async = true;
+        document.head.appendChild(scriptTag);
+
+        // Inicializa o gtag
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag; // deixa gtag disponível globalmente
+        gtag('js', new Date());
+        gtag('config', ID_ANALYTICS);
+      }
+
+      // Exibe o banner se ainda não aceitou
+      window.addEventListener('DOMContentLoaded', function() {
+        const consentimento = localStorage.getItem('cookies_aceitos');
+        if (consentimento === 'true') {
+          carregarGoogleAnalytics();
+        } else {
+          document.getElementById('cookie-banner').style.display = 'block';
+        }
+      });
+    </script>
+
 <script>
     lucide.createIcons();
   
