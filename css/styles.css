@@ -41,6 +41,7 @@ i[data-lucide] {
     padding: 20px 0;
     z-index: 1000;
     transition: background-color 0.3s;
+    padding-top: env(safe-area-inset-top);
 }
 
 .header.scrolled {
