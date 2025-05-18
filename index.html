@@ -13,25 +13,24 @@
     <meta property="og:title" content="Bibi Martins - Cantora e Compositora de R&B da Baixada Santista">
     <meta property="og:description" content="Conheça Bibi Martins, voz marcante da Baixada Santista. Veja sua agenda de shows, biografia, músicas e muito mais.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://bibimartins.com.br/img/og-image.jpg"> <!-- Altere para o caminho real de uma imagem representativa (1200x630px ideal) -->
-    <meta property="og:url" content="https://bibimartins.com.br"> <!-- Altere para seu domínio -->
+    <meta property="og:image" content="https://bibimartins.com.br/img/og-image.jpg">
+    <meta property="og:url" content="https://bibimartins.com.br">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bibi Martins - Cantora e Compositora de R&B">
     <meta name="twitter:description" content="Confira o site oficial da cantora Bibi Martins, destaque do R&B na Baixada Santista.">
-    <meta name="twitter:image" content="https://seudominio.com.br/img/og-image.jpg"> <!-- Altere também aqui -->
+    <meta name="twitter:image" content="https://bibimartins.com.br/img/og-image.jpg">
 
     <title>Bibi Martins - Cantora e Compositora de R&B</title>
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="img/bibifav.png" type="image/png">
-  <link rel="apple-touch-icon" href="img/bibifav.png">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/bibifav.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/bibifav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -51,9 +50,7 @@
         <span class="menu-icon"></span>
         <span class="menu-icon"></span>
         <span class="menu-icon"></span>
-
     </button>
-      
 
     <nav class="nav-mobile" id="mobile-nav">
       <a href="#home">Home</a>
@@ -109,19 +106,6 @@
         </div>
         <a href="#" class="button">Ingressos no Local</a>
       </div>
-
-      <!-- <div class="event-card">
-        <div class="event-date">
-          <i data-lucide="calendar"></i>
-          <div>
-            <h3>23 de Junho, 2025</h3>
-            <p>Circo Voador</p>
-            <p>Rio de Janeiro, Brasil</p>
-          </div>
-        </div>
-        <a href="#" class="button">Ingressos</a>
-      </div> -->
-
     </div>
   </div>
 </section>
@@ -233,68 +217,62 @@
 </footer>
 
 <!-- Banner de Cookies -->
-    <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #1a1a1a; color: #fff; padding: 1rem; text-align: center; z-index: 1000; display: none;">
-      Este site utiliza cookies para melhorar sua experiência. <a href="/politica-de-privacidade.html" style="color: #ffc000;">Saiba mais</a>.
-      <button onclick="aceitarCookies()" style="margin-left: 10px; padding: 0.5rem 1rem; background: #bb1313; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Aceitar</button>
-    </div>
-
-    <script>
-      // Função para ativar o consentimento
-      function aceitarCookies() {
-        localStorage.setItem('cookies_aceitos', 'true');
-        document.getElementById('cookie-banner').style.display = 'none';
-        carregarGoogleAnalytics();
-      }
-
-      // Função para injetar o Google Analytics após consentimento
-      function carregarGoogleAnalytics() {
-        // Substitua 'G-XXXXXXXXXX' pelo seu ID de medição real do GA4
-        const ID_ANALYTICS = 'G-EMG6MRJE24';
-
-        // Carrega o script do GA4
-        const scriptTag = document.createElement('script');
-        scriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${ID_ANALYTICS}`;
-        scriptTag.async = true;
-        document.head.appendChild(scriptTag);
-
-        // Inicializa o gtag
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        window.gtag = gtag; // deixa gtag disponível globalmente
-        gtag('js', new Date());
-        gtag('config', ID_ANALYTICS);
-      }
-
-      // Exibe o banner se ainda não aceitou
-      window.addEventListener('DOMContentLoaded', function() {
-        const consentimento = localStorage.getItem('cookies_aceitos');
-        if (consentimento === 'true') {
-          carregarGoogleAnalytics();
-        } else {
-          document.getElementById('cookie-banner').style.display = 'block';
-        }
-      });
-    </script>
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #1a1a1a; color: #fff; padding: 1rem; text-align: center; z-index: 1000; display: none;">
+  Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="politica-de-privacidade.html" style="color:#fff;">Política de Privacidade</a>.
+  <button id="accept-cookies" style="background:#bb1313; border:none; color:#fff; padding:0.5rem 1rem; margin-left: 1rem; cursor:pointer; font-weight: bold;">Aceitar</button>
+</div>
 
 <script>
-    lucide.createIcons();
-  
-    // Código para abrir/fechar o menu mobile
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileNav = document.getElementById('mobile-nav');
-  
-    menuToggle.addEventListener('click', () => {
-      mobileNav.classList.toggle('open');
-    });
-  
-    // Fecha o menu ao clicar em algum link
-    document.querySelectorAll('.nav-mobile a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-      });
-    });
+  // Função para setar cookie
+  function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days*24*60*60*1000).toUTCString();
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; SameSite=Lax';
+  }
+
+  // Função para ler cookie
+  function getCookie(name) {
+    const cookies = document.cookie.split('; ');
+    for (let c of cookies) {
+      const [key, val] = c.split('=');
+      if (key === name) return decodeURIComponent(val);
+    }
+    return null;
+  }
+
+  // Mostrar banner se não aceitou ainda
+  window.addEventListener('load', () => {
+    const consent = getCookie('cookie_consent');
+    if (!consent) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    } else if (consent === 'yes') {
+      carregarGoogleAnalytics();
+    }
+  });
+
+  document.getElementById('accept-cookies').addEventListener('click', () => {
+    setCookie('cookie_consent', 'yes', 30);
+    document.getElementById('cookie-banner').style.display = 'none';
+    carregarGoogleAnalytics();
+  });
+
+  // Função para carregar o Google Analytics só após consentimento
+  function carregarGoogleAnalytics() {
+    if (window.gaLoaded) return; // evitar múltiplas cargas
+
+    window.gaLoaded = true;
+    // Exemplo com GA4
+    const script = document.createElement('script');
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-EMG6MRJE24";
+    script.async = true;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EMG6MRJE24', { 'anonymize_ip': true });
+  }
 </script>
-  
-  <script src="js/main.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>
