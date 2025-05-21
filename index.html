@@ -28,6 +28,8 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="stylesheet" href="css/styles.css">
+
+
     <link rel="icon" href="img/bibifav.png" type="image/png">
     <link rel="apple-touch-icon" href="img/bibifav.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -271,85 +273,7 @@
     gtag('js', new Date());
     gtag('config', 'G-EMG6MRJE24', { 'anonymize_ip': true });
   }
-
-  
 </script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Data limite: 23/05/2025 às 19h de Brasília
-  const now = new Date();
-  const limit = new Date('2025-05-23T22:00:00Z'); // 19h BRT = 22h UTC
-
-  if (now >= limit) return;
-
-  const modalHTML = `
-    <div id="launchModal" style="
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.8);
-      display: flex; align-items: center; justify-content: center;
-      z-index: 9999;
-    ">
-      <div style="
-        background: white;
-        padding: 1rem;
-        border-radius: 12px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        max-width: 300px;
-        text-align: center;
-        position: relative;
-        font-family: 'Montserrat', sans-serif;
-        transform: rotate(-2deg);
-      ">
-        <button id="closeModal" style="
-          position: absolute;
-          top: 5px;
-          right: 10px;
-          background: none;
-          border: none;
-          font-size: 1.2rem;
-          cursor: pointer;
-          color: #333;
-        " aria-label="Fechar modal">&times;</button>
-
-        <div style="background: #f1f1f1; padding: 0.5rem; border-radius: 6px;">
-          <img src="img/banner_yt.jpg" alt="Lançamento Bibi" style="width: 100%; border-radius: 6px; box-shadow: 0 5px 10px rgba(0,0,0,0.2);">
-        </div>
-        <div style="margin-top: 1rem;">
-          <a href="https://youtube.com/@bibisssmartinsss?si=HWZ3UsqShvWf49MG" target="_blank" style="
-            background: #bb1313;
-            color: white;
-            padding: 0.6rem 1rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            transition: background 0.3s;
-          ">Inscreva-se</a>
-        </div>
-      </div>
-    </div>
-  `;
-
-  document.body.insertAdjacentHTML('beforeend', modalHTML);
-
-  // Fechar com botão
-  document.getElementById('closeModal').addEventListener('click', () => {
-    document.getElementById('launchModal').remove();
-  });
-
-  // Fechar com tecla ESC
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      const modal = document.getElementById('launchModal');
-      if (modal) modal.remove();
-    }
-  });
-});
-</script>
-
 
 <script src="js/main.js"></script>
 <script>
