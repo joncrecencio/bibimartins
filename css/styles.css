@@ -283,12 +283,14 @@ i[data-lucide] {
     gap: 1rem;
 }
 
-.track-item {
+.track-item a {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    color: #f1f1f1;
 }
 
 .platforms-grid {
