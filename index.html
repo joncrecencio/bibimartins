@@ -28,8 +28,6 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="stylesheet" href="css/styles.css">
-
-
     <link rel="icon" href="img/bibifav.png" type="image/png">
     <link rel="apple-touch-icon" href="img/bibifav.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -277,7 +275,22 @@
 
 <script src="js/main.js"></script>
 <script>
-  lucide.createIcons();
+    lucide.createIcons();
+  
+    // Código para abrir/fechar o menu mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+  
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+    });
+  
+    // Fecha o menu ao clicar em algum link
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+      });
+    });  
 </script>
 </body>
 </html>
