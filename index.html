@@ -27,7 +27,7 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="icon" href="img/bibifav.png" type="image/png">
     <link rel="apple-touch-icon" href="img/bibifav.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -95,7 +95,7 @@
   <div class="container fade-in">
     <h2 class="section-title">Agenda de Shows</h2>
     <div class="events-grid">
-      <div class="event-card">
+      <div class="event-card event-finished">
         <div class="event-date">
           <i data-lucide="calendar"></i>
           <div>
@@ -104,7 +104,8 @@
             <p>São Vicente, Brasil</p>
           </div>
         </div>
-        <a href="#" class="button">Ingressos no Local</a>
+        <a href="#" class="button disabled" tabindex="-1" aria-disabled="true">Ingressos no Local</a>
+        <span class="event-badge">Evento finalizado</span>
       </div>
     </div>
   </div>
